@@ -1,0 +1,14 @@
+// Sass @use rules must come first
+@use './abstracts/abstracts';
+@use './vendors/vendors';
+@use './base/base';
+@use './components/components';
+@use './layout/layout';
+@use './pages/pages';
+@use './themes/themes';
+@use 'settings';
+
+// Google Fonts import (after @use rules)
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap');
+

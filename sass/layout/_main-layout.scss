@@ -1,0 +1,43 @@
+/* Configuración fija para 1920x1080 - Sin responsive */
+.main-layout {
+    position: absolute;
+    top: 120px;
+    left: 8rem;
+    width: calc(100% - 16rem);
+    height: calc(100% - 180px);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+}
+
+.left-column {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+}
+
+.hero-content {
+    position: relative;
+    width: 100%;
+    flex: 1;
+}
+
+.icon-section {
+    position: relative;
+    align-self: flex-end;
+}
+
+.hero-images {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, auto);
+    gap: 1.5rem;
+    width: 100%;
+    height: 100%;
+}
+
+/* Fin del layout fijo - Sin media queries responsive */

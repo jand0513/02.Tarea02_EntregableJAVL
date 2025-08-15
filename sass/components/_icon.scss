@@ -1,0 +1,66 @@
+.icon-section {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1.5rem;
+    padding-top: 1rem;
+    padding-bottom: 3rem;
+    width: 100%;
+    height: auto;
+}
+
+.icon-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.75rem;
+    text-align: left;
+    width: 211px;
+    flex-shrink: 0;
+}.icon-card:last-child {
+    margin-bottom: 0;
+}
+
+.icon-card .icon-placeholder {
+    width: 79px;
+    height: 79px;
+    border-radius: 1rem;
+    background-color: var(--card-icon-bg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    flex-shrink: 0;
+}
+
+.icon-card .icon-placeholder img {
+    width: 40px;
+    height: 40px;
+}
+
+.icon-card span {
+    font-size: 1.278rem;
+    font-weight: 500;
+    color: var(--text-color-primary);
+    font-family: var(--font-family-heading);
+    flex: 1;
+    line-height: 1.2;
+    word-wrap: break-word;
+    hyphens: auto;
+}
+
+@media (max-width: 1024px) {
+    .icon-section {
+        justify-content: center;
+        gap: 2rem;
+        padding: 2rem 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .icon-section {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+}

@@ -1,0 +1,8 @@
+@use '../abstracts/variables' as *;
+
+/* Font family for all elements moved to _base.scss to avoid duplication */
+html * {
+    font-family: var(--font-family-body);
+}
+
+/* Body overflow styles consolidated in _base.scss */ 
