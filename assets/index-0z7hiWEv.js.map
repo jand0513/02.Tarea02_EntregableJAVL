@@ -1,0 +1,1 @@
+{"version":3,"file":"index-0z7hiWEv.js","sources":["../../main.js"],"sourcesContent":["// Importar el archivo principal de Sass\r\nimport './sass/app.scss';\r\n\r\n// Importar el archivo JavaScript de la aplicación\r\nimport './js/app.js';\r\n\r\nconsole.log('¡Proyecto corriendo con Vite y Sass!');\r\n"],"names":[],"mappings":"ssBAMA,QAAQ,IAAI,sCAAsC"}

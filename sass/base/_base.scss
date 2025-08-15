@@ -2,29 +2,34 @@
 @use 'reset';
 @use 'typography';
 
-/* Configuración fija para 1920x1080 */
+/* Configuración con scroll para pantallas menores a 1920x1080 */
 html {
-    width: 100vw;
-    height: 100vh;
-    overflow: hidden;
-    background-color: black;
     margin: 0;
     padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background-color: black;
+    min-height: 100vh;
+    
+    /* Mostrar scroll si la ventana es menor a 1920x1080 */
+    overflow-x: auto;
+    overflow-y: auto;
 }
 
 body {
     font-family: var(--font-family-body);
     background-color: var(--dark-background);
     color: var(--text-color-secondary);
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
+    
+    /* Dimensiones fijas para el diseño */
     width: 1920px;
-    height: 1080px;
+    min-height: 1080px;
     position: relative;
-    overflow: hidden;
+    
+    /* Centrado horizontal cuando la pantalla es más grande */
+    max-width: none;
+    
+    /* Fondo negro para pantallas más grandes */
     box-shadow: 0 0 0 9999px black;
 }
 
