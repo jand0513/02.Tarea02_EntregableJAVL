@@ -2,6 +2,7 @@ import { defineConfig } from 'vite';
 
 export default defineConfig({
   // Configuración del servidor de desarrollo
+  base: '/02.Tarea02_EntregableJAVL/',
   server: {
     port: 3000,
     open: true,
